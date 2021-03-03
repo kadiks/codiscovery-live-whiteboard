@@ -57,6 +57,8 @@ const init = () => {
       });
     }
 
+    ctx.strokeStyle = selectedColor;
+
     ctx.stroke();
   });
 
