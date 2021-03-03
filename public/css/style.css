@@ -38,9 +38,10 @@ li.mediumpurple {
 .rubber {
   width: 20px;
   height: 20px;
-  background-color: black;
-  color: white;
-  text-align: center;
+  background-color: lightgray;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAA6ElEQVQ4T62UvQ3CQAxGXyCiQqKDjhEYAok1GICBGIAxkJiCDaiQaCioED+RTxgdx/niINLafv782bmKP3/VD7znqyZb2xUoMK1ZAFvgBIxVWBdgDEsHk9gdqL3AEkzhIccD9MIE3Ar0wkRYD3iUFOo2S35rw3djC5jCrOvS+iWwCTNnMrvCPmxJgfHR5sArYB0JOQDTWJQF1Jy+GA1cgCEQNxwA13TCGFgaVfI0PgP2baZK3Au0vA89VKF3EUWYF1gDt9ILk1vKGRgZvqh/nt/06w7nwC4DdsHa/DgCE+P4zXfZ3dn7sjcswioVHtnvNwAAAABJRU5ErkJggg==);  
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .cursor {
@@ -50,4 +51,8 @@ li.mediumpurple {
   position: absolute;
   display: none;
   pointer-events: none;
+}
+
+.rubber-cursor {
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAA6ElEQVQ4T62UvQ3CQAxGXyCiQqKDjhEYAok1GICBGIAxkJiCDaiQaCioED+RTxgdx/niINLafv782bmKP3/VD7znqyZb2xUoMK1ZAFvgBIxVWBdgDEsHk9gdqL3AEkzhIccD9MIE3Ar0wkRYD3iUFOo2S35rw3djC5jCrOvS+iWwCTNnMrvCPmxJgfHR5sArYB0JOQDTWJQF1Jy+GA1cgCEQNxwA13TCGFgaVfI0PgP2baZK3Au0vA89VKF3EUWYF1gDt9ILk1vKGRgZvqh/nt/06w7nwC4DdsHa/DgCE+P4zXfZ3dn7sjcswioVHtnvNwAAAABJRU5ErkJggg==), auto;
 }
