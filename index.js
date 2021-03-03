@@ -25,7 +25,7 @@ app.get("/status", function (req, res) {
 io.on("connection", (socket) => {
   console.log(`Connected to client with Id ${socket.id}`);
 
-  io.emit("element", "New element");
+  //   io.emit("element", "New element");
 
   //   io.on("command", (cmd) => {
   //     console.log(`Recieved command ${cmd}`);
@@ -35,6 +35,10 @@ io.on("connection", (socket) => {
     // console.log("c-draw-pen", obj);
     socket.broadcast.emit("s-draw-pen", obj);
   });
+
+  setInterval(() => {
+    io.emit("s-blank-canvas");
+  }, 3 * 60 * 1000);
 });
 
 // Start HTTP server

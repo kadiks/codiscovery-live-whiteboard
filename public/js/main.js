@@ -60,6 +60,14 @@ const init = () => {
     ctx.stroke();
   });
 
+  socket.on("s-blank-canvas", () => {
+    ctx.beginPath();
+    ctx.fillStyle = "white";
+    console.log("canvasEl.width", canvasEl.width);
+    console.log("canvasEl.heh", canvasEl.height);
+    ctx.fillRect(0, 0, canvasEl.width, canvasEl.height);
+  });
+
   document.addEventListener("mousemove", (e) => {
     if (e.pageX < 20) {
       cursorEl.style.display = "none";
