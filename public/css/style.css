@@ -49,4 +49,5 @@ li.mediumpurple {
   border: 1px solid black;
   position: absolute;
   display: none;
+  pointer-events: none;
 }
