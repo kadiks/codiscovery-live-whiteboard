@@ -87,6 +87,7 @@ const init = () => {
       return;
     }
 
+    canvasEl.classList.remove('rubber-cursor')
     cursorEl.style.display = "none";
 
     selectedTool = "pen";
@@ -97,6 +98,7 @@ const init = () => {
 
   rubberEl.addEventListener("click", () => {
     console.log("Rubber selected");
+    canvasEl.classList.add('rubber-cursor')
     cursorEl.style.display = "block";
     selectedTool = "rubber";
   });
